@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   # namespace :api do
   #   get "/photos" => "photos#index"
   # end
+
+  namespace :api do
+    #.    url in browser.   controller method
+    get "/the_fortune" => "my_fortunes#fortune"
+  end
 end
